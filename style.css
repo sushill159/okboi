@@ -1,0 +1,113 @@
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: 'Press Start 2P', cursive;
+  text-align: center;
+  margin: 0;
+  padding: 40px 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-pic {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.profile-pic img {
+  width: 200px;
+  border-radius: 50%;
+  border: 4px solid cyan;
+  box-shadow: 0 0 20px cyan;
+  transition: transform 0.2s ease;
+}
+
+.profile-pic:hover img {
+  transform: scale(1.05);
+}
+
+.tooltip {
+  visibility: hidden;
+  background-color: #111;
+  color: #0ff;
+  text-align: left;
+  border-radius: 8px;
+  padding: 10px;
+  position: absolute;
+  top: 50%;
+  left: 110%;
+  transform: translateY(-50%) translateX(-10px);
+  width: 220px;
+  font-size: 10px;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 0 10px #0ff;
+  white-space: pre-line;
+}
+
+.profile-pic:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(-50%) translateX(0);
+}
+
+.glitch {
+  font-size: 22px;
+  margin: 10px 0;
+}
+
+.aesthetic {
+  font-size: 12px;
+  color: #aaa;
+}
+
+#quote {
+  letter-spacing: 1.5px;
+  word-spacing: 3px;
+  text-shadow: 0 0 5px cyan;
+  margin-top: 10px;
+}
+
+.follow {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 12px 20px;
+  background: black;
+  border: 2px solid cyan;
+  color: cyan;
+  text-decoration: none;
+  font-size: 14px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px cyan;
+  transition: all 0.3s ease;
+}
+
+.follow:hover {
+  background-color: cyan;
+  color: black;
+}
+
+#mute-btn {
+  margin-top: 10px;
+  padding: 10px 20px;
+  border: 2px solid magenta;
+  background-color: black;
+  color: magenta;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#mute-btn:hover {
+  background-color: magenta;
+  color: black;
+  box-shadow: 0 0 10px magenta;
+}
